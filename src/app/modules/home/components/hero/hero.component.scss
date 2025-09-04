@@ -1,0 +1,26 @@
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://www.dijitalkarne.com/wp-content/uploads/2025/08/kubio-image-28-1-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  .top-title {
+    font-size: 70px;
+  }
+
+  .sub-title {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 991px) {
+    height: 90vh;
+  }
+}

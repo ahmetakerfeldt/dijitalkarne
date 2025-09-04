@@ -1,0 +1,20 @@
+.home {
+  gap: 120px;
+  margin-bottom: 120px;
+
+  @media screen and (max-width: 991px) {
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+
+  .contact-us {
+    height: 30vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://www.dijitalkarne.com/wp-content/uploads/2025/08/pexels-photo-7661185-1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; // scroll yaptıkça resim sabit kalır
+  }
+}
