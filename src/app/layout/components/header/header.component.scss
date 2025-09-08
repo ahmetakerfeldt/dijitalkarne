@@ -8,20 +8,45 @@
         font-weight: 700;
         color: var(--bs-white);
       }
+
+      .navbar-toggler {
+        box-shadow: none;
+        border: 1px solid white;
+      }
+
       .navbar-nav {
         .nav-item {
           .nav-link {
-            color: var(--bs-white);
-            font-size: 16px;
-            &.active-link {
-              color: var(--bs-primary);
-              border-bottom: 2px solid var(--bs-primary);
-            }
+            position: relative;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
 
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 0;
+              height: 2px;
+              background: var(--bs-primary);
+              transition: width 0.3s ease;
+            }
 
             &:hover {
               color: var(--bs-primary);
-              border-bottom: 2px solid var(--bs-primary);
+
+              &::after {
+                width: 100%;
+              }
+            }
+
+            &.active-link {
+              color: var(--bs-primary);
+
+              &::after {
+                width: 100%;
+              }
             }
           }
         }

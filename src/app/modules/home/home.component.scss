@@ -17,4 +17,62 @@
     background-position: center center;
     background-attachment: fixed; // scroll yaptıkça resim sabit kalır
   }
+
+  .inner-content {
+    cursor: pointer;
+    padding: 40px 20px;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(to right, #1f4b77, #2a5e6e);
+    transition: 0.2s ease-in-out background-color;
+
+    &:hover {
+      background-image: linear-gradient(to right, #1f4b77, #00c6ff);
+    }
+  }
+
+  .info-content {
+    position: relative;
+    padding: 40px 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-conic-gradient(#232323 0% 25%, #225785 0% 50%) 0 0 / 40px 40px;
+      filter: blur(13px); /* sadece background blur */
+      z-index: -1; /* yazının arkasında */
+    }
+  }
+
+  .why-we-content {
+    padding: 40px 20px;
+    background-image: linear-gradient(to right, #1f4b77, #2a5e6e);
+  }
+
+  .contact-container {
+    .contact-content {
+      border: 1px solid transparent;
+      padding: 25px 10px;
+      border-radius: 5px;
+      transition: 0.2s ease-in-out background-color;
+
+      &.wp {
+        background-color: #25D366;
+      }
+
+      &.ig {
+        background-color: #E1306C;
+      }
+
+
+      &:hover {
+        border: 1px solid var(--bs-gray-900);
+        background-color: black;
+      }
+    }
+  }
 }

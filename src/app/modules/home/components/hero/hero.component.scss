@@ -1,6 +1,6 @@
 .hero {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://www.dijitalkarne.com/wp-content/uploads/2025/08/kubio-image-28-1-1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,6 +21,28 @@
   }
 
   @media screen and (max-width: 991px) {
-    height: 90vh;
+    height: auto;
+    padding: 100px 0 100px 0;
+  }
+
+  .info-container {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border: 1px solid transparent;
+    transition: 0.2s ease-in-out border;
+
+    &:hover {
+      border: 1px solid var(--bs-gray-600);
+    }
+
+    .info-area {
+      padding: 10px;
+      border: 1px solid var(--bs-gray-700);
+
+      transition: 0.2s ease-in-out border;
+
+
+    }
   }
 }
+
