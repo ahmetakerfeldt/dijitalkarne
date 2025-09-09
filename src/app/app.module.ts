@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {LayoutModule} from "@src/app/layout/layout.module";
 import {HomeModule} from "@src/app/modules/home/home.module";
+import {OurServicesModule} from "@src/app/modules/our-services/our-services.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {HomeModule} from "@src/app/modules/home/home.module";
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
-    HomeModule
+    HomeModule,
+    OurServicesModule
   ],
   providers: [
     provideClientHydration()

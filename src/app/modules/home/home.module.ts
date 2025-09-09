@@ -6,13 +6,15 @@ import { HomeComponent } from './home.component';
 import { HeroComponent } from './components/hero/hero.component';
 import {SharedModule} from "@shared/shared.module";
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     HeroComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FaqComponent
   ],
   imports: [
     CommonModule,

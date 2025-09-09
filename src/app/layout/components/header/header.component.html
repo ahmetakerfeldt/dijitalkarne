@@ -2,7 +2,9 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">DijitalKarne</a>
+        <a class="navbar-brand text-white">
+          <img class="rounded-2" width="80" height="80" src="assets/images/main-ico-2.jpg">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars-staggered py-1 text-white fa-lg"></i>
         </button>
@@ -12,16 +14,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a routerLink="home"  routerLinkActive="active-link" class="nav-link active" aria-current="page">Ana Sayfa</a>
+              <a routerLink="home"  routerLinkActive="active-link" class="nav-link">Ana Sayfa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hizmetlerimiz</a>
+              <a class="nav-link" routerLink="our-services" routerLinkActive="active-link">Hizmetlerimiz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hakkımızda</a>
+              <a class="nav-link" role="button" (click)="scrollToElement('aboutUs')" routerLinkActive="active-link">Hakkımızda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">İletişim</a>
+              <a class="nav-link" role="button" (click)="scrollToElement('contactUs')">İletişim</a>
             </li>
           </ul>
         </div>

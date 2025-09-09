@@ -30,24 +30,6 @@
     }
   }
 
-  .info-content {
-    position: relative;
-    padding: 40px 20px;
-    border-radius: 12px;
-    overflow: hidden;
-    color: white;
-    z-index: 1;
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: repeating-conic-gradient(#232323 0% 25%, #225785 0% 50%) 0 0 / 40px 40px;
-      filter: blur(13px); /* sadece background blur */
-      z-index: -1; /* yazının arkasında */
-    }
-  }
-
   .why-we-content {
     padding: 40px 20px;
     background-image: linear-gradient(to right, #1f4b77, #2a5e6e);
